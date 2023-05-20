@@ -1,3 +1,6 @@
+
+# formModel
+
 from django import forms
 from .models1 import Logger
 class LogForm(forms.ModelForm):

@@ -7,4 +7,3 @@ class Logger(models.Model):
     Email = models.EmailField()
     time_Log = models.DateTimeField(help_text="Enter exact Time!")
     
-    

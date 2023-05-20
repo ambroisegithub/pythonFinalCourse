@@ -31,5 +31,8 @@ class Menu(models.Model):
 # Menu.objects.get()
 # To get one according to your choices attribute we can use filter function
 # Menu.objects.filter(email = "muhayimana21@gmail.com")
+# create super user
+# python3 manage.py createsuperuser
+# and follows the rules
  
 

@@ -18,9 +18,22 @@ from django.contrib import admin
 from django.urls import path
 from myapp import views
 from myapp import views1
+from myapp import views2
+from myapp import viewsmenu
+from myapp import viewstemplatsmodels
+from myapp import viewsinheritance
+# form_view2
 urlpatterns = [
     path('home/',views.form_view),
     path('home1/',views1.form_view1),
+    path('about/',views2.form_view2),
     path('admin/', admin.site.urls),
+    path('menu/',viewsmenu.menu),
+    path('viewstemplatsmodels/',viewstemplatsmodels.templates_view),
+    path('base/',viewsinheritance.base,name='base'),
+    path('page/',viewsinheritance.page,name='page'),
+    path('index/',viewsinheritance.index,name='index'),
+    
+    
 ]
 

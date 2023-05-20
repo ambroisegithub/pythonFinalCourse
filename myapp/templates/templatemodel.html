@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>menu</title>
+    </head>
+    <body>
+        
+{% comment %} <table style="border:1px solid black;">
+    {% for item in menu1 %}
+    <tr> 
+        <td style="border:1px solid black;">{{item.name}}</td>
+        <td style="border:1px solid black;"> {{item.price}}</td>
+        <td></td>
+    </tr>
+    {% endfor %}
+</table>      {% endcomment %}
+
+{% if menu %}
+
+{% for item in menu %}
+
+{{ item.name }} : {{ item.price }}
+{% endfor %} 
+{% else %}
+<p>No item Display</p>
+{% endif %}
+</body>
+</html>

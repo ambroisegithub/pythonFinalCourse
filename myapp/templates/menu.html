@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>menu</title>
+    </head>
+    <body>
+        
+<table style="border:1px solid black;">
+    {% for item in mains %}
+    <tr> 
+        <td style="border:1px solid black;">{{item.name}}</td>
+        <td style="border:1px solid black;"> {{item.age}}</td>
+        <td></td>
+    </tr>
+    {% endfor %}
+</table>     
+
+    </body>
+</html>
